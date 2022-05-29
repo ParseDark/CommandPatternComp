@@ -8,7 +8,7 @@ const defaultProjects = Array(100)
   .map((i) => Math.random() * 1000 + "");
 
 export default function CommandPalette({ projects = defaultProjects }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();
 

@@ -1,11 +1,16 @@
-import styles from "./layout.module.css";
+import CommandPalette from "./CommandPalette";
+import Header from "./Header";
 
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Devops Team";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
-      <main>{children}</main>
+    <div>
+      <Header />
+      <div className="px-20 mt-24">
+        <main>{children}</main>
+        <CommandPalette />
+      </div>
     </div>
   );
 }

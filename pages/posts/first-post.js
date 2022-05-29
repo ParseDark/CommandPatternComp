@@ -5,7 +5,7 @@ import CommandPalette from "../../components/CommandPalette";
 export default function FirstPost() {
   return (
     <Layout>
-      <CommandPalette />
+      <div>dklasjkla</div>
     </Layout>
   );
 }
