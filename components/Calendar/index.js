@@ -1,6 +1,8 @@
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
+import { faFlag } from "@fortawesome/free-solid-svg-icons";
 import useCalendar, { getMonthStr } from "./useCalendar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Calendar() {
   const [{ calendar }, { genCalendar }] = useCalendar();
@@ -66,6 +68,11 @@ export default function Calendar() {
             className={`flex items-center justify-center w-full h-10  rounded-none rounded-tl-lg hover:bg-gray-100 text-sm text-gray-800`}
           >
             {i}
+            {(index - 1) % 7 === 0 && i && (
+              <div className="px-2">
+                <FontAwesomeIcon className="text-blue-400" icon={faFlag} />
+              </div>
+            )}
           </span>
         ))}
       </div>

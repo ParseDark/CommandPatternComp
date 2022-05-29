@@ -5,7 +5,7 @@ import { LineDemo } from "../../components/Chart/LineDemo";
 import LastTimeRecord from "../../components/LastTimeRecord";
 import Calendar from "../../components/Calendar";
 
-export default function home() {
+export default function Home() {
   return (
     <Layout>
       <section className="grid grid-cols-2 gap-3">

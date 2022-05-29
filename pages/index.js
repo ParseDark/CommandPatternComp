@@ -1,13 +1,5 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Home from "./posts/home";
 
-export default function Home() {
-  return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-        <div>111</div>
-      </Head>
-    </Layout>
-  );
+export default function Index() {
+  return <Home />;
 }

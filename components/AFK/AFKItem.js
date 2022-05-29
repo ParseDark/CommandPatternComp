@@ -1,6 +1,3 @@
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/solid";
-
 export default function AFKItem() {
   return (
     <div className="flex justify-center">

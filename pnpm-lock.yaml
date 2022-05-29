@@ -5,7 +5,6 @@ specifiers:
   '@fortawesome/free-solid-svg-icons': ^6.1.1
   '@fortawesome/react-fontawesome': ^0.1.18
   '@headlessui/react': ^1.6.2
-  '@heroicons/react': ^1.0.6
   '@tailwindcss/forms': ^0.5.2
   autoprefixer: ^10.4.7
   chart.js: ^3.8.0
@@ -25,7 +24,6 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18_hjfkmtq3pe7bdfmd7inrupgslm
   '@headlessui/react': 1.6.3_ef5jwxihqo6n7gxfmzogljlgcm
-  '@heroicons/react': 1.0.6_react@18.1.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   chart.js: 3.8.0
   dayjs: 1.11.2
@@ -118,14 +116,6 @@ packages:
     dependencies:
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
-    dev: false
-
-  /@heroicons/react/1.0.6_react@18.1.0:
-    resolution: {integrity: sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==}
-    peerDependencies:
-      react: '>= 16'
-    dependencies:
-      react: 18.1.0
     dev: false
 
   /@humanwhocodes/config-array/0.9.5:

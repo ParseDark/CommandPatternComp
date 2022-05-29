@@ -1,7 +1,8 @@
 import { useState, useMemo, useEffect, Fragment } from "react";
 import { Dialog, Combobox, Transition } from "@headlessui/react";
 import { useRouter } from "next/router";
-import { SearchIcon } from "@heroicons/react/outline";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const defaultProjects = Array(100)
   .fill(1)
@@ -42,7 +43,7 @@ export default function CommandPalette({ projects = defaultProjects }) {
       <Dialog
         open={isOpen}
         onClose={() => setIsOpen(false)}
-        className="fixed inset-0 p-8 pt-[25vh]"
+        className="fixed inset-0 p-8 pt-[18vh]"
       >
         <Transition.Child
           enter="duration-300 ease-out"
@@ -74,7 +75,10 @@ export default function CommandPalette({ projects = defaultProjects }) {
             }}
           >
             <div className="flex items-center px-4">
-              <SearchIcon className="h-6, w-6 text-gray-500" />
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="h-6, w-6 text-gray-500"
+              />
               <Combobox.Input
                 className="w-full border-0 bg-transparent text-sm text-gray-800 placeholder-gray-400 focus:ring-0 h-12 pl-5"
                 placeholder="Search..."
