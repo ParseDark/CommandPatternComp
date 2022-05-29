@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,54 +20,54 @@ export default function Header() {
           >
             <ul className="navbar-nav mr-auto lg:flex lg:flex-row gap-10">
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
                   href="/posts/home"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
                   href="/posts/UserGuide"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
                   User Guide
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
                   href="#!"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
                   Trigger Record
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2 lg:mb-0">
-                <a
+                <Link
                   className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
                   href="/posts/AFK"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
                   AFK
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2 lg:mb-0">
-                <a
+                <Link
                   className="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
                   href="#!"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
                   About Devx
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2 lg:mb-0">
                 <div className="flex space-x-2 justify-center">

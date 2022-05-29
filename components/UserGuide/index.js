@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function UserGuide() {
   return (
@@ -32,12 +33,12 @@ export default function UserGuide() {
             </h4>
           </div>
           <div className="ml-6 mb-6 pb-6">
-            <a
+            <Link
               href="#!"
               className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm"
             >
               12 January, 2022
-            </a>
+            </Link>
             <p className="text-gray-700 mt-2 mb-4">
               Before you start Next. Need to create a PR. Before you start Next.
               Need to create a PR. Before you start Next. Need to create a PR.
@@ -58,12 +59,12 @@ export default function UserGuide() {
             </h4>
           </div>
           <div className="ml-6 mb-6 pb-6">
-            <a
+            <Link
               href="#!"
               className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm"
             >
               12 January, 2022
-            </a>
+            </Link>
             <p className="text-gray-700 mt-2 mb-4">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -88,12 +89,12 @@ export default function UserGuide() {
             </h4>
           </div>
           <div className="ml-6 mb-6 pb-6">
-            <a
+            <Link
               href="#!"
               className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm"
             >
               27 December, 2021
-            </a>
+            </Link>
             <p className="text-gray-700 mt-2 mb-4">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
