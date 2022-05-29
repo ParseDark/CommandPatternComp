@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../../components/layout";
 import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import { LineDemo } from "../../components/Chart/LineDemo";
-import { BarDemo } from "../../components/Chart/BarDemo";
 import LastTimeRecord from "../../components/LastTimeRecord";
+import Calendar from "../../components/Calendar";
 
 export default function home() {
   return (
@@ -18,13 +18,13 @@ export default function home() {
         <section className="m-1 rounded-lg overflow-hidden">
           <div className="shadow-lg rounded-lg">
             <div className="py-3 px-5 bg-gray-50">Doughnut chart</div>
-            <LineDemo />
+            <Calendar />
           </div>
         </section>
         <section className="m-1 rounded-lg overflow-hidden">
           <div className="shadow-lg rounded-lg">
             <div className="py-3 px-5 bg-gray-50">Doughnut chart</div>
-            <BarDemo />
+            <LineDemo />
           </div>
         </section>
         <section className="m-1 rounded-lg overflow-hidden">

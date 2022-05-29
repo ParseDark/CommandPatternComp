@@ -9,6 +9,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.2
   autoprefixer: ^10.4.7
   chart.js: ^3.8.0
+  dayjs: ^1.11.2
   eslint: ^8.16.0
   eslint-config-next: 12.1.6
   next: 12.1.6
@@ -27,6 +28,7 @@ dependencies:
   '@heroicons/react': 1.0.6_react@18.1.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   chart.js: 3.8.0
+  dayjs: 1.11.2
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-chartjs-2: 4.1.0_3loy6czceob3hzurpbyqxprqge
@@ -652,6 +654,10 @@ packages:
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: true
+
+  /dayjs/1.11.2:
+    resolution: {integrity: sha512-F4LXf1OeU9hrSYRPTTj/6FbO4HTjPKXvEIC1P2kcnFurViINCVk3ZV0xAS3XVx9MkMsXbbqlK6hjseaYbgKEHw==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
