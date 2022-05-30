@@ -11,6 +11,7 @@ specifiers:
   dayjs: ^1.11.2
   eslint: ^8.16.0
   eslint-config-next: 12.1.6
+  fuse.js: ^6.6.2
   next: 12.1.6
   postcss: ^8.4.5
   react: 18.1.0
@@ -27,6 +28,7 @@ dependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   chart.js: 3.8.0
   dayjs: 1.11.2
+  fuse.js: 6.6.2
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-chartjs-2: 4.1.0_3loy6czceob3hzurpbyqxprqge
@@ -1129,6 +1131,11 @@ packages:
   /functions-have-names/1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: true
+
+  /fuse.js/6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
+    dev: false
 
   /get-intrinsic/1.1.1:
     resolution: {integrity: sha512-kWZrnVM42QCiEA2Ig1bG8zjoIMOgxWwYCEeNdwY6Tv/cOSeGpcoX4pXHfKUxNKVoArnrEr2e9srnAxxGIraS9Q==}
