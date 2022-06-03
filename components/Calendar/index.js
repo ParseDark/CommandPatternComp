@@ -57,7 +57,7 @@ export default function Calendar() {
         {dayjs.en.weekdays.map((i) => (
           <span
             key={i}
-            className="flex items-center justify-center w-full h-10 font-semibold rounded-lg text-gray-800 font-bold"
+            className="flex items-center justify-center w-full h-10 font-semibold rounded-lg text-gray-800"
           >
             {i}
           </span>
@@ -68,7 +68,7 @@ export default function Calendar() {
             className={`flex items-center justify-center w-full h-10  rounded-none rounded-tl-lg hover:bg-gray-100 text-sm text-gray-800`}
           >
             {i}
-            {(index - 1) % 7 === 0 && i && (
+            {(index - 2) % 7 === 0 && i && (
               <div className="px-2">
                 <FontAwesomeIcon className="text-blue-400" icon={faFlag} />
               </div>
