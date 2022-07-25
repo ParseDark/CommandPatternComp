@@ -27,6 +27,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section className="m-1 rounded-lg col-span-4 shadow-lg min-h-max">
           <div className="rounded-lg">
             <div className="py-3 px-5 bg-gray-100 font-bold">
