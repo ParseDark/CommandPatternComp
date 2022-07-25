@@ -10,7 +10,7 @@ import NumberCard from "../../components/NumberCard";
 export default function Home() {
   return (
     <Layout>
-      <section className="grid grid-cols-12 gap-3">
+      <section className="grid grid-cols-12 gap-3" id="pdf-dom">
         <section className="m-1 rounded-lg col-span-3 shadow-lg">
           <div className="rounded-lg h-full">
             <div className="py-3 px-5 bg-gray-100 font-bold">
