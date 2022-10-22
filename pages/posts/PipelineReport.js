@@ -3,9 +3,8 @@ import Layout from "../../components/layout";
 import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import NumberCard from "../../components/NumberCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const incrementalData = [
   {
@@ -14,17 +13,22 @@ const incrementalData = [
     dataSource: "/api/activateUser?timeRange=[x,y]&events=ActivateUser",
   },
   {
-    title: "New Endpoint",
+    title: "Pipeline Edit",
     value: 20,
     dataSource: "/api/newEndpoint",
   },
   {
-    title: "Single Endpoint Request Deploy",
+    title: "Pipeline Schedule",
     value: 100,
     dataSource: "/api/single",
   },
   {
-    title: "Advance Endpoint Request Deploy",
+    title: "Pipeline Run Debug",
+    value: 100,
+    dataSource: "/api/advance",
+  },
+  {
+    title: "Add New Pipeline",
     value: 100,
     dataSource: "/api/advance",
   },
@@ -32,19 +36,31 @@ const incrementalData = [
 
 const PageViews = [
   {
-    title: "Endpoint List",
+    title: "Pipeline List",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
   },
   {
-    title: "Endpoint Detail",
+    title: "Pipeline Detail",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
   },
   {
-    title: "Endpoint Create",
+    title: "Pipeline Design",
+    activateUser: 300,
+    accessCount: 300,
+    dataSource: "/api/pageViews",
+  },
+  {
+    title: "Pipeline Debug",
+    activateUser: 300,
+    accessCount: 300,
+    dataSource: "/api/pageViews",
+  },
+  {
+    title: "Pipeline Monitor",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
@@ -59,10 +75,6 @@ export default function EndpointReport({}) {
             <NumberCard value={i.value} prefix={i.prefix} />
           </ShadowCard>
         ))}
-
-        <ShadowCard title={" Request Deploy Distribution Rate"} colWidth={4}>
-          <DoughnutDemo />
-        </ShadowCard>
 
         {PageViews.map((page) => (
           <ShadowCard
