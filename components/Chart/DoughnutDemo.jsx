@@ -33,7 +33,7 @@ export const data = {
 
 export function DoughnutDemo() {
   return (
-    <div className='h-80'>
+    <div className='h-60'>
       <Doughnut data={data} options={{
         responsive: true,
         maintainAspectRatio: false

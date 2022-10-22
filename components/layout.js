@@ -6,7 +6,7 @@ export const siteTitle = "Devops Team";
 export default function Layout({ children }) {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="px-20 mt-24">
         <main>{children}</main>
         <CommandPalette />

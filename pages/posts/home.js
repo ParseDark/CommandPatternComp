@@ -3,48 +3,80 @@ import Layout from "../../components/layout";
 import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import { LineDemo } from "../../components/Chart/LineDemo";
 import { BarDemo } from "../../components/Chart/BarDemo";
-import LastTimeRecord from "../../components/LastTimeRecord";
-import Calendar from "../../components/Calendar";
 import NumberCard from "../../components/NumberCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import useSwr from "swr";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
+  const { data, error } = useSwr(`/api/hello`, fetcher);
+  const incrementalData = [
+    {
+      title: "Activate User",
+      value: 20,
+    },
+    {
+      title: "New Endpoint",
+      value: 20,
+    },
+    {
+      title: "Single Endpoint Request Deploy",
+      value: 100,
+    },
+    {
+      title: "Advance Endpoint Request Deploy",
+      value: 100,
+    },
+  ];
+  console.log(data, error);
   return (
     <Layout>
       <section className="grid grid-cols-12 gap-3">
-        <section className="m-1 rounded-lg col-span-3 shadow-lg">
-          <div className="rounded-lg h-full">
-            <div className="py-3 px-5 bg-gray-100 font-bold">
-              Maintain testenv(s)
+        {incrementalData.map((i) => (
+          <section
+            className="m-1 rounded-lg col-span-2 shadow-lg"
+            key={i.title}
+          >
+            <div className="rounded-lg h-full">
+              <div className="py-3 px-5 bg-gray-100 font-bold">{i.title}</div>
+              <NumberCard value={i.value} />
             </div>
-            <NumberCard value={20} />
-          </div>
-        </section>
-        <section className="m-1 rounded-lg col-span-5 shadow-lg">
+          </section>
+        ))}
+        <section className="m-1 rounded-lg col-span-4 shadow-lg">
           <div className="rounded-lg">
-            <div className="py-3 px-5 bg-gray-100 font-bold">Success Rate</div>
+            <div className="py-3 px-5 bg-gray-100 font-bold">
+              Request Deploy Distribution Rate
+            </div>
             <div className="p-4">
               <DoughnutDemo />
             </div>
           </div>
         </section>
 
-        <section className="m-1 rounded-lg col-span-4 shadow-lg min-h-max">
+        <section className="m-1 rounded-lg col-span-4 shadow-lg">
           <div className="rounded-lg">
-            <div className="py-3 px-5 bg-gray-100 font-bold">
-              Trigger Calendar
+            <div className="py-3 px-5 bg-gray-100 font-bold items-center">
+              User Growth
+              <FontAwesomeIcon icon={faEye} className="ml-3" />
+              (300)
             </div>
-            <Calendar />
+            <div className="p-4">Screen + Link</div>
           </div>
         </section>
-        <section className="m-1 rounded-lg col-span-6 shadow-lg">
+
+        <section className="m-1 rounded-lg col-span-4 shadow-lg">
           <div className="rounded-lg">
-            <div className="py-3 px-5 bg-gray-100 font-bold">User Growth</div>
+            <div className="py-3 px-5 bg-gray-100 font-bold">Last Time</div>
             <div className="p-4">
-              <LineDemo />
+              <BarDemo />
             </div>
           </div>
         </section>
-        <section className="m-1 rounded-lg col-span-6 shadow-lg">
+
+        <section className="m-1 rounded-lg col-span-4 shadow-lg">
           <div className="rounded-lg">
             <div className="py-3 px-5 bg-gray-100 font-bold">Last Time</div>
             <div className="p-4">
