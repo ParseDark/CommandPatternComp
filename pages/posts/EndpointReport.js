@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../components/layout";
 import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import NumberCard from "../../components/NumberCard";
@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import useConfigDataFetch from "../../store/useConfigDataFetch";
 
 const incrementalData = [
   {
@@ -51,10 +52,15 @@ const PageViews = [
   },
 ];
 export default function EndpointReport({}) {
+  const [{ configs }, { initConfigJob }] = useConfigDataFetch(incrementalData);
+  useEffect(() => {
+    initConfigJob();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <Layout>
       <section className="grid grid-cols-12 gap-3">
-        {incrementalData.map((i) => (
+        {(configs || []).map((i) => (
           <ShadowCard title={i.title} colWidth={2} key={i.title}>
             <NumberCard value={i.value} prefix={i.prefix} />
           </ShadowCard>
