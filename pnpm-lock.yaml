@@ -6,6 +6,7 @@ specifiers:
   '@fortawesome/react-fontawesome': ^0.1.18
   '@headlessui/react': ^1.6.2
   '@tailwindcss/forms': ^0.5.2
+  antd: ^4.23.6
   autoprefixer: ^10.4.7
   chart.js: ^3.8.0
   dayjs: ^1.11.2
@@ -28,6 +29,7 @@ dependencies:
   '@fortawesome/react-fontawesome': 0.1.18_hjfkmtq3pe7bdfmd7inrupgslm
   '@headlessui/react': 1.6.3_ef5jwxihqo6n7gxfmzogljlgcm
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
+  antd: artifactory.g.devqa.gcp.dev.paypalinc.com/antd/4.23.6_ef5jwxihqo6n7gxfmzogljlgcm
   chart.js: 3.8.0
   dayjs: 1.11.2
   fuse.js: 6.6.2
@@ -2086,6 +2088,71 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
 
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/colors/6.0.0:
+    resolution: {integrity: sha1-m5NmJXz/zEfbQrnQIDu1ksE8Apg=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@ant-design/colors/-/colors-6.0.0.tgz}
+    name: '@ant-design/colors'
+    version: 6.0.0
+    dependencies:
+      '@ctrl/tinycolor': artifactory.g.devqa.gcp.dev.paypalinc.com/@ctrl/tinycolor/3.4.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/icons-svg/4.2.1:
+    resolution: {integrity: sha1-hjDajrRHGkqr2u19H/apfcss8Fo=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz}
+    name: '@ant-design/icons-svg'
+    version: 4.2.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/icons/4.7.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-jDy+ClVrqSr13H0ecMCyW1F5rw8=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@ant-design/icons/-/icons-4.7.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/icons/4.7.0
+    name: '@ant-design/icons'
+    version: 4.7.0
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@ant-design/colors': artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/colors/6.0.0
+      '@ant-design/icons-svg': artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/icons-svg/4.2.1
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/react-slick/0.29.2_react@18.1.0:
+    resolution: {integrity: sha1-U+ankg6jVi7rswTBWn/C1+YZ0pw=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@ant-design/react-slick/-/react-slick-0.29.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/react-slick/0.29.2
+    name: '@ant-design/react-slick'
+    version: 0.29.2
+    peerDependencies:
+      react: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      json2mq: artifactory.g.devqa.gcp.dev.paypalinc.com/json2mq/0.2.0
+      lodash: artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21
+      react: 18.1.0
+      resize-observer-polyfill: artifactory.g.devqa.gcp.dev.paypalinc.com/resize-observer-polyfill/1.5.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3:
+    resolution: {integrity: sha1-x7ZUtX9vY89/i0GKycoEQIxFefQ=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@babel/runtime/-/runtime-7.18.3.tgz}
+    name: '@babel/runtime'
+    version: 7.18.3
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: artifactory.g.devqa.gcp.dev.paypalinc.com/regenerator-runtime/0.13.9
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@ctrl/tinycolor/3.4.1:
+    resolution: {integrity: sha1-dbTCeUjIHojM06iQIEe815fzjTI=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz}
+    name: '@ctrl/tinycolor'
+    version: 3.4.1
+    engines: {node: '>=10'}
+    dev: false
+
   artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-android-arm-eabi/12.1.6:
     resolution: {integrity: sha1-eaNTSbmPL4wDirYmGqnNDRIcA/k=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-12.1.6.tgz}
     name: '@next/swc-android-arm-eabi'
@@ -2210,6 +2277,114 @@ packages:
     requiresBuild: true
     optional: true
 
+  artifactory.g.devqa.gcp.dev.paypalinc.com/antd/4.23.6_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-4hUjxAHw6P3/R77Ei9ZTUkdJKyc=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/antd/-/antd-4.23.6.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/antd/4.23.6
+    name: antd
+    version: 4.23.6
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@ant-design/colors': artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/colors/6.0.0
+      '@ant-design/icons': artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/icons/4.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      '@ant-design/react-slick': artifactory.g.devqa.gcp.dev.paypalinc.com/@ant-design/react-slick/0.29.2_react@18.1.0
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      '@ctrl/tinycolor': artifactory.g.devqa.gcp.dev.paypalinc.com/@ctrl/tinycolor/3.4.1
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      copy-to-clipboard: artifactory.g.devqa.gcp.dev.paypalinc.com/copy-to-clipboard/3.3.2
+      lodash: artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21
+      memoize-one: artifactory.g.devqa.gcp.dev.paypalinc.com/memoize-one/6.0.0
+      moment: artifactory.g.devqa.gcp.dev.paypalinc.com/moment/2.29.3
+      rc-cascader: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-cascader/3.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-checkbox: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-checkbox/2.3.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-collapse: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-collapse/3.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-dialog: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dialog/8.9.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-drawer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-drawer/5.1.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-dropdown: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dropdown/4.0.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-field-form: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-field-form/1.27.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-image: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-image/5.7.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-input: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input/0.1.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-input-number: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input-number/7.3.9_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-mentions: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-mentions/1.10.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-menu: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-menu/9.6.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-notification: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-notification/4.6.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-pagination: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-pagination/3.1.17_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-picker: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-picker/2.6.11_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-progress: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-progress/3.3.3_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-rate: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-rate/2.9.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-segmented: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-segmented/2.1.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-select: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-select/14.1.13_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-slider: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-slider/10.0.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-steps: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-steps/4.1.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-switch: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-switch/3.2.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-table: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-table/7.26.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tabs: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tabs/12.2.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-textarea: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-textarea/0.4.5_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tooltip: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tooltip/5.2.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tree: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree/5.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tree-select: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree-select/5.5.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-upload: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-upload/4.3.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      scroll-into-view-if-needed: artifactory.g.devqa.gcp.dev.paypalinc.com/scroll-into-view-if-needed/2.2.29
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/array-tree-filter/2.1.0:
+    resolution: {integrity: sha1-hzrAD+yDdJ8lWsjdCDgUtPYykZA=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/array-tree-filter/-/array-tree-filter-2.1.0.tgz}
+    name: array-tree-filter
+    version: 2.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/async-validator/4.2.5:
+    resolution: {integrity: sha1-yW6jMypSFpnQr6rO7VEKVGVsYzk=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/async-validator/-/async-validator-4.2.5.tgz}
+    name: async-validator
+    version: 4.2.5
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2:
+    resolution: {integrity: sha1-NR2BO/ATf8xqdqFriCCNJWCg2SQ=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/classnames/-/classnames-2.3.2.tgz}
+    name: classnames
+    version: 2.3.2
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/compute-scroll-into-view/1.0.17:
+    resolution: {integrity: sha1-aojxis2dQunPS6pr7H4FImB6t6s=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/compute-scroll-into-view/-/compute-scroll-into-view-1.0.17.tgz}
+    name: compute-scroll-into-view
+    version: 1.0.17
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/copy-to-clipboard/3.3.2:
+    resolution: {integrity: sha1-WyY+wjZiJLEAGB3e184FebNAwQc=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/copy-to-clipboard/-/copy-to-clipboard-3.3.2.tgz}
+    name: copy-to-clipboard
+    version: 3.3.2
+    dependencies:
+      toggle-selection: artifactory.g.devqa.gcp.dev.paypalinc.com/toggle-selection/1.0.6
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/date-fns/2.29.3:
+    resolution: {integrity: sha1-J0AtL8Z+tEK1EbcLvfmOZBHNaKg=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/date-fns/-/date-fns-2.29.3.tgz}
+    name: date-fns
+    version: 2.29.3
+    engines: {node: '>=0.11'}
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/dayjs/1.11.2:
+    resolution: {integrity: sha1-+g9SI+8NZySz2DJxNIkM/j1y++U=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/dayjs/-/dayjs-1.11.2.tgz}
+    name: dayjs
+    version: 1.11.2
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/dom-align/1.12.3:
+    resolution: {integrity: sha1-o20CUx2uDu+iq7DE22WVJQUm8QM=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/dom-align/-/dom-align-1.12.3.tgz}
+    name: dom-align
+    version: 1.12.3
+    dev: false
+
   artifactory.g.devqa.gcp.dev.paypalinc.com/fsevents/2.3.2:
     resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/fsevents/-/fsevents-2.3.2.tgz}
     name: fsevents
@@ -2219,8 +2394,705 @@ packages:
     requiresBuild: true
     optional: true
 
+  artifactory.g.devqa.gcp.dev.paypalinc.com/json2mq/0.2.0:
+    resolution: {integrity: sha1-tje9O6nqvhIsg+lyBIOusQ0skEo=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/json2mq/-/json2mq-0.2.0.tgz}
+    name: json2mq
+    version: 0.2.0
+    dependencies:
+      string-convert: artifactory.g.devqa.gcp.dev.paypalinc.com/string-convert/0.2.1
+    dev: false
+
   artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21:
     resolution: {integrity: sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/memoize-one/6.0.0:
+    resolution: {integrity: sha1-slkbhx7YKUiu5HJ9xqvO7qyMEEU=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/memoize-one/-/memoize-one-6.0.0.tgz}
+    name: memoize-one
+    version: 6.0.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/moment/2.29.3:
+    resolution: {integrity: sha1-7dR0EcMiQTmZ96WUDVJt4YPAMfM=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/moment/-/moment-2.29.3.tgz}
+    name: moment
+    version: 2.29.3
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-align/4.0.12_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-BltcaKHMkqAIAMkjkyDZ/fXxYgc=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-align/-/rc-align-4.0.12.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-align/4.0.12
+    name: rc-align
+    version: 4.0.12
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      dom-align: artifactory.g.devqa.gcp.dev.paypalinc.com/dom-align/1.12.3
+      lodash: artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      resize-observer-polyfill: artifactory.g.devqa.gcp.dev.paypalinc.com/resize-observer-polyfill/1.5.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-cascader/3.7.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-mBNN9XjOHMoivo+0MZsE3089yjY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-cascader/-/rc-cascader-3.7.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-cascader/3.7.0
+    name: rc-cascader
+    version: 3.7.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      array-tree-filter: artifactory.g.devqa.gcp.dev.paypalinc.com/array-tree-filter/2.1.0
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-select: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-select/14.1.13_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tree: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree/5.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-checkbox/2.3.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-+Rs2eMftsrqoEhyUg8Zk+m8K78E=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-checkbox/-/rc-checkbox-2.3.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-checkbox/2.3.2
+    name: rc-checkbox
+    version: 2.3.2
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-collapse/3.3.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-/GbUyc/q9B6TKy3m2i1FSHSu5Vo=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-collapse/-/rc-collapse-3.3.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-collapse/3.3.1
+    name: rc-collapse
+    version: 3.3.1
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dialog/8.9.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-BNw5Ui8DIe0uBgGNSn4CpMMr0+o=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-dialog/-/rc-dialog-8.9.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dialog/8.9.0
+    name: rc-dialog
+    version: 8.9.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-drawer/5.1.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-wbikblwGS6RqFiM/vPsczsanPBA=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-drawer/-/rc-drawer-5.1.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-drawer/5.1.0
+    name: rc-drawer
+    version: 5.1.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dropdown/4.0.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-9l2dPYl1AkEFfbWdWnXkPNRXa2g=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-dropdown/-/rc-dropdown-4.0.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dropdown/4.0.1
+    name: rc-dropdown
+    version: 4.0.1
+    peerDependencies:
+      react: '>=16.11.0'
+      react-dom: '>=16.11.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-field-form/1.27.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-USMoLPFWG6NPMZfDe4uai3EN190=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-field-form/-/rc-field-form-1.27.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-field-form/1.27.2
+    name: rc-field-form
+    version: 1.27.2
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      async-validator: artifactory.g.devqa.gcp.dev.paypalinc.com/async-validator/4.2.5
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-image/5.7.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-Z43AFIRZVMMCN4CMAMexLl8qCwc=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-image/-/rc-image-5.7.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-image/5.7.1
+    name: rc-image
+    version: 5.7.1
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-dialog: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dialog/8.9.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input-number/7.3.9_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-vGVgN26lleO/j70xN3EcvBWIALU=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-input-number/-/rc-input-number-7.3.9.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input-number/7.3.9
+    name: rc-input-number
+    version: 7.3.9
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input/0.1.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-fWoIWKXx/Yn3gCDPbxPWcneEgbE=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-input/-/rc-input-0.1.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-input/0.1.2
+    name: rc-input
+    version: 0.1.2
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-mentions/1.10.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-8uQFW1NdBC1AjpS4U7cJ29lm9UY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-mentions/-/rc-mentions-1.10.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-mentions/1.10.0
+    name: rc-mentions
+    version: 1.10.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-menu: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-menu/9.6.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-textarea: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-textarea/0.4.5_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-menu/9.6.4_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-Az57iEjBegmoG2i41MP6RXYF9PY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-menu/-/rc-menu-9.6.4.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-menu/9.6.4
+    name: rc-menu
+    version: 9.6.4
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-overflow: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-overflow/1.2.8_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-PTH5fkH7jk+RpKQYm2qYrGM0KGk=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-motion/-/rc-motion-2.6.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2
+    name: rc-motion
+    version: 2.6.2
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-notification/4.6.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-Tnb8LQVo8DzJOsGMniB2Pr4p+kY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-notification/-/rc-notification-4.6.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-notification/4.6.0
+    name: rc-notification
+    version: 4.6.0
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-overflow/1.2.8_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-QPFA+rwkQRhUPmJ83R73UNlIGog=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-overflow/-/rc-overflow-1.2.8.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-overflow/1.2.8
+    name: rc-overflow
+    version: 1.2.8
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-pagination/3.1.17_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-keaQqolIBuNEzqiOpKFtJEGUob0=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-pagination/-/rc-pagination-3.1.17.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-pagination/3.1.17
+    name: rc-pagination
+    version: 3.1.17
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-picker/2.6.11_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-1KVeRkgFF80b/qX1rNKLHWviMtI=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-picker/-/rc-picker-2.6.11.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-picker/2.6.11
+    name: rc-picker
+    version: 2.6.11
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      date-fns: artifactory.g.devqa.gcp.dev.paypalinc.com/date-fns/2.29.3
+      dayjs: artifactory.g.devqa.gcp.dev.paypalinc.com/dayjs/1.11.2
+      moment: artifactory.g.devqa.gcp.dev.paypalinc.com/moment/2.29.3
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-progress/3.3.3_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-65v/usqxU08lQvn2hhznciVDYrE=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-progress/-/rc-progress-3.3.3.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-progress/3.3.3
+    name: rc-progress
+    version: 3.3.3
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-rate/2.9.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-SliWXR7PkYluuuAdRYtZBW3wtOo=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-rate/-/rc-rate-2.9.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-rate/2.9.2
+    name: rc-rate
+    version: 2.9.2
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-n0YFL4HN8DSYvjUUTLfFP9KCxMc=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-resize-observer/-/rc-resize-observer-1.2.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0
+    name: rc-resize-observer
+    version: 1.2.0
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      resize-observer-polyfill: artifactory.g.devqa.gcp.dev.paypalinc.com/resize-observer-polyfill/1.5.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-segmented/2.1.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-Dgr+ZGwaDkSg4YeF9RjEJjPsjvw=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-segmented/-/rc-segmented-2.1.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-segmented/2.1.0
+    name: rc-segmented
+    version: 2.1.0
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-select/14.1.13_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-frU9AL6C+45QUN4wlOcu3PJ85vY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-select/-/rc-select-14.1.13.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-select/14.1.13
+    name: rc-select
+    version: 14.1.13
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-overflow: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-overflow/1.2.8_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-virtual-list: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-virtual-list/3.4.10_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-slider/10.0.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-cFjGj/Hhqk58NTbl4QEovbzLh/k=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-slider/-/rc-slider-10.0.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-slider/10.0.1
+    name: rc-slider
+    version: 10.0.1
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-steps/4.1.4_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-C6gtsgLVnKUtBpPcmIDdFFsZ3CM=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-steps/-/rc-steps-4.1.4.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-steps/4.1.4
+    name: rc-steps
+    version: 4.1.4
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-switch/3.2.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-0AH3fxJmTVJZW09vtCXdnmb7qOg=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-switch/-/rc-switch-3.2.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-switch/3.2.2
+    name: rc-switch
+    version: 3.2.2
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-table/7.26.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-nVF+f6US51cf3MRT6xvxnt+sb7w=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-table/-/rc-table-7.26.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-table/7.26.0
+    name: rc-table
+    version: 7.26.0
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tabs/12.2.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-Hdmyph9XoGeArBkpaGooQNTaDoI=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-tabs/-/rc-tabs-12.2.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tabs/12.2.1
+    name: rc-tabs
+    version: 12.2.1
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-dropdown: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-dropdown/4.0.1_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-menu: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-menu/9.6.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-textarea/0.4.5_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-jhFn8CZ2MBvQgXwwsyb7/dDeb5Y=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-textarea/-/rc-textarea-0.4.5.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-textarea/0.4.5
+    name: rc-textarea
+    version: 0.4.5
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tooltip/5.2.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-5cr6js6/eBCJNqC8uTwVD6gayTs=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-tooltip/-/rc-tooltip-5.2.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tooltip/5.2.2
+    name: rc-tooltip
+    version: 5.2.2
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-trigger: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree-select/5.5.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-fbBR5QeN1Vlg5Y7G2o9SB2jWRoY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-tree-select/-/rc-tree-select-5.5.2.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree-select/5.5.2
+    name: rc-tree-select
+    version: 5.5.2
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-select: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-select/14.1.13_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-tree: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree/5.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree/5.7.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-0OMW7urCukocNrKyIB2EiE8cdqE=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-tree/-/rc-tree-5.7.0.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-tree/5.7.0
+    name: rc-tree
+    version: 5.7.0
+    engines: {node: '>=10.x'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-virtual-list: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-virtual-list/3.4.10_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-rK+t8+rzhOf0ZsMDv6DzTIE317g=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-trigger/-/rc-trigger-5.3.1.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-trigger/5.3.1
+    name: rc-trigger
+    version: 5.3.1
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-align: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-align/4.0.12_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-motion: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-motion/2.6.2_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-upload/4.3.4_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-g/99OGdjHDetv9cuo9H9fpfKhK8=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-upload/-/rc-upload-4.3.4.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-upload/4.3.4
+    name: rc-upload
+    version: 4.3.4
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-pBJvATWMhvF8G/OAodg9bJFVrmU=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-util/-/rc-util-5.24.4.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4
+    name: rc-util
+    version: 5.24.4
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': artifactory.g.devqa.gcp.dev.paypalinc.com/@babel/runtime/7.18.3
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      react-is: artifactory.g.devqa.gcp.dev.paypalinc.com/react-is/16.13.1
+      shallowequal: artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/rc-virtual-list/3.4.10_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha1-gKfEfJE4gzRlfmlI2/1wwXDcc3I=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/rc-virtual-list/-/rc-virtual-list-3.4.10.tgz}
+    id: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-virtual-list/3.4.10
+    name: rc-virtual-list
+    version: 3.4.10
+    engines: {node: '>=8.x'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      classnames: artifactory.g.devqa.gcp.dev.paypalinc.com/classnames/2.3.2
+      rc-resize-observer: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-resize-observer/1.2.0_ef5jwxihqo6n7gxfmzogljlgcm
+      rc-util: artifactory.g.devqa.gcp.dev.paypalinc.com/rc-util/5.24.4_ef5jwxihqo6n7gxfmzogljlgcm
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/react-is/16.13.1:
+    resolution: {integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-is/-/react-is-16.13.1.tgz}
+    name: react-is
+    version: 16.13.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/resize-observer-polyfill/1.5.1:
+    resolution: {integrity: sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz}
+    name: resize-observer-polyfill
+    version: 1.5.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/scroll-into-view-if-needed/2.2.29:
+    resolution: {integrity: sha1-VReRqEt+IodwZRH4xoFh5JkKuIU=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/scroll-into-view-if-needed/-/scroll-into-view-if-needed-2.2.29.tgz}
+    name: scroll-into-view-if-needed
+    version: 2.2.29
+    dependencies:
+      compute-scroll-into-view: artifactory.g.devqa.gcp.dev.paypalinc.com/compute-scroll-into-view/1.0.17
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/shallowequal/1.1.0:
+    resolution: {integrity: sha1-GI1SHelbkIdAT9TctosT3wrk5/g=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/shallowequal/-/shallowequal-1.1.0.tgz}
+    name: shallowequal
+    version: 1.1.0
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/string-convert/0.2.1:
+    resolution: {integrity: sha1-aYLMMEn7tM2F+LJFaLnZvznu/5c=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/string-convert/-/string-convert-0.2.1.tgz}
+    name: string-convert
+    version: 0.2.1
+    dev: false
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/toggle-selection/1.0.6:
+    resolution: {integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/toggle-selection/-/toggle-selection-1.0.6.tgz}
+    name: toggle-selection
+    version: 1.0.6
     dev: false

@@ -1,4 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./normalize.css"
+@import "./normalize.css";
+@import "antd/dist/antd.css";

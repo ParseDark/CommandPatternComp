@@ -9,6 +9,7 @@ export default function PageViewComponent({ page }) {
   return (
     <ShadowCard
       key={page.title}
+      loading={page.loading}
       title={
         <>
           {page.title}

@@ -1,17 +1,19 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import queryLighthouseAPI from "../sdk";
 import createTemplate from "../utils/queryTemplate";
 
+const formatDefaultConfig = (v) => Object.fromEntries(v.map((config) => [config.title, { ...config, loading: true }]))
+
 const useConfigDataFetch = (defaultConfigs) => {
   const [configs, setConfigs] = useState(
-    Object.fromEntries(defaultConfigs.map((config) => [config.title, config]))
+    formatDefaultConfig(defaultConfigs)
   );
   const configList = useMemo(
     () => Object.entries(configs).map(([, v]) => v),
     [configs]
   );
 
-  const initConfigJob = () => {
+  const initConfigJob = (configs) => {
     Object.entries(configs).map(([k, config]) => {
       const queryParams = createTemplate({
         ...config.payload,
@@ -23,12 +25,19 @@ const useConfigDataFetch = (defaultConfigs) => {
             [k]: {
               ...config,
               data: config.formatValueFunc ? config.formatValueFunc(res) : res,
+              loading: false,
             },
           };
         });
       });
     });
   };
+
+  useEffect(() => {
+    debugger;
+    initConfigJob(formatDefaultConfig(defaultConfigs));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [defaultConfigs]);
 
   return [
     {
