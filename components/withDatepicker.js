@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { DatePicker } from "antd";
+import React, { useState } from "react";
+import { DownloadOutlined } from "@ant-design/icons";
+import { DatePicker, Button } from "antd";
 import moment from "moment";
+
 import Layout from "./layout";
 
 const { RangePicker } = DatePicker;
@@ -23,7 +25,7 @@ const withDatepicker = (Comp) => (props) => {
 
   return (
     <Layout>
-      <section className="py-8">
+      <section className="py-4">
         <RangePicker
           value={timeRanger}
           onChange={(v) => {
@@ -31,6 +33,9 @@ const withDatepicker = (Comp) => (props) => {
             setTimeRanger(v);
           }}
         />
+        <Button icon={<DownloadOutlined />} size={20} className="ml-5">
+          Download PDF
+        </Button>
       </section>
       <Comp
         {...props}

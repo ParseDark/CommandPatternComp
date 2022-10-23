@@ -14,6 +14,7 @@ const useConfigDataFetch = (defaultConfigs) => {
   );
 
   const initConfigJob = (configs) => {
+    setConfigs(configs);
     Object.entries(configs).map(([k, config]) => {
       const queryParams = createTemplate({
         ...config.payload,
