@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { fetcher } from "../utils/utils";
+import queryLighthouseAPI from "../sdk";
+import createTemplate from "../utils/queryTemplate";
 
 const useConfigDataFetch = (defaultConfigs) => {
   const [configs, setConfigs] = useState(
@@ -12,13 +13,16 @@ const useConfigDataFetch = (defaultConfigs) => {
 
   const initConfigJob = () => {
     Object.entries(configs).map(([k, config]) => {
-      fetcher(config.dataSource).then((res) => {
+      const queryParams = createTemplate({
+        ...config.payload,
+      });
+      queryLighthouseAPI(queryParams).then((res) => {
         setConfigs((pre) => {
           return {
             ...pre,
             [k]: {
               ...config,
-              data: res,
+              data: config.formatValueFunc ? config.formatValueFunc(res) : res,
             },
           };
         });

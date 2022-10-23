@@ -1,36 +1,143 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../components/layout";
-import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import NumberCard from "../../components/NumberCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
+import useConfigDataFetch from "../../store/useConfigDataFetch";
+import { sum } from "lodash";
+
+const timeRange = {
+  since: "2022-08-01T00:00:00.000Z",
+  until: "2022-10-22T23:59:59.999Z",
+};
 
 const incrementalData = [
   {
     title: "Activate User",
-    value: 20,
-    dataSource: "/api/activateUser?timeRange=[x,y]&events=ActivateUser",
-  },
-  {
-    title: "Pipeline Edit",
-    value: 20,
-    dataSource: "/api/newEndpoint",
-  },
-  {
-    title: "Pipeline Schedule",
-    value: 100,
-    dataSource: "/api/single",
-  },
-  {
-    title: "Pipeline Run Debug",
-    value: 100,
-    dataSource: "/api/advance",
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          value: "intelligenceHub_aiPlatform_pipeline",
+          key: "event_name",
+          selected: true,
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return res?.internal_user?.length || 0;
+    },
   },
   {
     title: "Add New Pipeline",
-    value: 100,
-    dataSource: "/api/advance",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          key: "event_name",
+          value: "createPipelineSDK",
+          selected: true,
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          value: "Err",
+          key: "event_name",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
+  },
+  {
+    title: "Pipeline Edit",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          key: "event_name",
+          value: "updatePipelineDetailSDK",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          key: "event_name",
+          value: "updatePipelineGlobalConfigSDK",
+          selected: true,
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          value: "Err",
+          key: "event_name",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
+  },
+  {
+    title: "Pipeline Schedule",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          key: "event_name",
+          value: "schedulePipelineSDK",
+          selected: true,
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          value: "Err",
+          key: "event_name",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
+  },
+  {
+    title: "Pipeline Run Debug",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          key: "event_name",
+          value: "triggerPipelineTaskDebugSDK",
+          selected: true,
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          value: "Err",
+          key: "event_name",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
   },
 ];
 
@@ -67,12 +174,18 @@ const PageViews = [
   },
 ];
 export default function EndpointReport({}) {
+  const [{ configs }, { initConfigJob }] = useConfigDataFetch(incrementalData);
+  useEffect(() => {
+    initConfigJob();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <Layout>
       <section className="grid grid-cols-12 gap-3">
-        {incrementalData.map((i) => (
+        {(configs || []).map((i) => (
           <ShadowCard title={i.title} colWidth={2} key={i.title}>
-            <NumberCard value={i.value} prefix={i.prefix} />
+            <NumberCard value={i.data} prefix={i.prefix} />
           </ShadowCard>
         ))}
 

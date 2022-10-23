@@ -12,6 +12,7 @@ specifiers:
   eslint: ^8.16.0
   eslint-config-next: 12.1.6
   fuse.js: ^6.6.2
+  lodash: ^4.17.21
   next: 12.1.6
   postcss: ^8.4.5
   react: 18.1.0
@@ -30,6 +31,7 @@ dependencies:
   chart.js: 3.8.0
   dayjs: 1.11.2
   fuse.js: 6.6.2
+  lodash: artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-chartjs-2: 4.1.0_3loy6czceob3hzurpbyqxprqge
@@ -145,102 +147,6 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
-
-  /@next/swc-android-arm-eabi/12.1.6:
-    resolution: {integrity: sha512-BxBr3QAAAXWgk/K7EedvzxJr2dE014mghBSA9iOEAv0bMgF+MRq4PoASjuHi15M2zfowpcRG8XQhMFtxftCleQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [android]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-android-arm64/12.1.6:
-    resolution: {integrity: sha512-EboEk3ROYY7U6WA2RrMt/cXXMokUTXXfnxe2+CU+DOahvbrO8QSWhlBl9I9ZbFzJx28AGB9Yo3oQHCvph/4Lew==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [android]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-darwin-arm64/12.1.6:
-    resolution: {integrity: sha512-P0EXU12BMSdNj1F7vdkP/VrYDuCNwBExtRPDYawgSUakzi6qP0iKJpya2BuLvNzXx+XPU49GFuDC5X+SvY0mOw==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-darwin-x64/12.1.6:
-    resolution: {integrity: sha512-9FptMnbgHJK3dRDzfTpexs9S2hGpzOQxSQbe8omz6Pcl7rnEp9x4uSEKY51ho85JCjL4d0tDLBcXEJZKKLzxNg==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-linux-arm-gnueabihf/12.1.6:
-    resolution: {integrity: sha512-PvfEa1RR55dsik/IDkCKSFkk6ODNGJqPY3ysVUZqmnWMDSuqFtf7BPWHFa/53znpvVB5XaJ5Z1/6aR5CTIqxPw==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-linux-arm64-gnu/12.1.6:
-    resolution: {integrity: sha512-53QOvX1jBbC2ctnmWHyRhMajGq7QZfl974WYlwclXarVV418X7ed7o/EzGY+YVAEKzIVaAB9JFFWGXn8WWo0gQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-linux-arm64-musl/12.1.6:
-    resolution: {integrity: sha512-CMWAkYqfGdQCS+uuMA1A2UhOfcUYeoqnTW7msLr2RyYAys15pD960hlDfq7QAi8BCAKk0sQ2rjsl0iqMyziohQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-linux-x64-gnu/12.1.6:
-    resolution: {integrity: sha512-AC7jE4Fxpn0s3ujngClIDTiEM/CQiB2N2vkcyWWn6734AmGT03Duq6RYtPMymFobDdAtZGFZd5nR95WjPzbZAQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-linux-x64-musl/12.1.6:
-    resolution: {integrity: sha512-c9Vjmi0EVk0Kou2qbrynskVarnFwfYIi+wKufR9Ad7/IKKuP6aEhOdZiIIdKsYWRtK2IWRF3h3YmdnEa2WLUag==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-win32-arm64-msvc/12.1.6:
-    resolution: {integrity: sha512-3UTOL/5XZSKFelM7qN0it35o3Cegm6LsyuERR3/OoqEExyj3aCk7F025b54/707HTMAnjlvQK3DzLhPu/xxO4g==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-win32-ia32-msvc/12.1.6:
-    resolution: {integrity: sha512-8ZWoj6nCq6fI1yCzKq6oK0jE6Mxlz4MrEsRyu0TwDztWQWe7rh4XXGLAa2YVPatYcHhMcUL+fQQbqd1MsgaSDA==}
-    engines: {node: '>= 10'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    optional: true
-
-  /@next/swc-win32-x64-msvc/12.1.6:
-    resolution: {integrity: sha512-4ZEwiRuZEicXhXqmhw3+de8Z4EpOLQj/gp+D9fFWo6ii6W1kBkNNvvEx4A90ugppu+74pT1lIJnOuz3A9oQeJA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    optional: true
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -583,7 +489,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: artifactory.g.devqa.gcp.dev.paypalinc.com/fsevents/2.3.2
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -1134,13 +1040,6 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    optional: true
-
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
 
@@ -1563,18 +1462,18 @@ packages:
       react-dom: 18.1.0_react@18.1.0
       styled-jsx: 5.0.2_react@18.1.0
     optionalDependencies:
-      '@next/swc-android-arm-eabi': 12.1.6
-      '@next/swc-android-arm64': 12.1.6
-      '@next/swc-darwin-arm64': 12.1.6
-      '@next/swc-darwin-x64': 12.1.6
-      '@next/swc-linux-arm-gnueabihf': 12.1.6
-      '@next/swc-linux-arm64-gnu': 12.1.6
-      '@next/swc-linux-arm64-musl': 12.1.6
-      '@next/swc-linux-x64-gnu': 12.1.6
-      '@next/swc-linux-x64-musl': 12.1.6
-      '@next/swc-win32-arm64-msvc': 12.1.6
-      '@next/swc-win32-ia32-msvc': 12.1.6
-      '@next/swc-win32-x64-msvc': 12.1.6
+      '@next/swc-android-arm-eabi': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-android-arm-eabi/12.1.6
+      '@next/swc-android-arm64': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-android-arm64/12.1.6
+      '@next/swc-darwin-arm64': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-darwin-arm64/12.1.6
+      '@next/swc-darwin-x64': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-darwin-x64/12.1.6
+      '@next/swc-linux-arm-gnueabihf': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm-gnueabihf/12.1.6
+      '@next/swc-linux-arm64-gnu': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm64-gnu/12.1.6
+      '@next/swc-linux-arm64-musl': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm64-musl/12.1.6
+      '@next/swc-linux-x64-gnu': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-x64-gnu/12.1.6
+      '@next/swc-linux-x64-musl': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-x64-musl/12.1.6
+      '@next/swc-win32-arm64-msvc': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-arm64-msvc/12.1.6
+      '@next/swc-win32-ia32-msvc': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-ia32-msvc/12.1.6
+      '@next/swc-win32-x64-msvc': artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-x64-msvc/12.1.6
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -2186,3 +2085,142 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-android-arm-eabi/12.1.6:
+    resolution: {integrity: sha1-eaNTSbmPL4wDirYmGqnNDRIcA/k=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-12.1.6.tgz}
+    name: '@next/swc-android-arm-eabi'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-android-arm64/12.1.6:
+    resolution: {integrity: sha1-7AjqYXlPh1LI68rL7QqvxblAdFY=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-android-arm64/-/swc-android-arm64-12.1.6.tgz}
+    name: '@next/swc-android-arm64'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-darwin-arm64/12.1.6:
+    resolution: {integrity: sha1-0QU4BWFf0HBumxZniTpyJxzYcRk=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.1.6.tgz}
+    name: '@next/swc-darwin-arm64'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-darwin-x64/12.1.6:
+    resolution: {integrity: sha1-LRuSaiL0xSMNWzEfnFbP3MQGr+w=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-darwin-x64/-/swc-darwin-x64-12.1.6.tgz}
+    name: '@next/swc-darwin-x64'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm-gnueabihf/12.1.6:
+    resolution: {integrity: sha1-wCGRjSqUoX+CMQal4GkzW4oZck8=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-linux-arm-gnueabihf/-/swc-linux-arm-gnueabihf-12.1.6.tgz}
+    name: '@next/swc-linux-arm-gnueabihf'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm64-gnu/12.1.6:
+    resolution: {integrity: sha1-rFXAe/q943jfoM4rj8HDsol+ga4=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-12.1.6.tgz}
+    name: '@next/swc-linux-arm64-gnu'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-arm64-musl/12.1.6:
+    resolution: {integrity: sha1-5Cn4JieYlL6Qlr5r7BPnXj1r1nE=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-12.1.6.tgz}
+    name: '@next/swc-linux-arm64-musl'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-x64-gnu/12.1.6:
+    resolution: {integrity: sha1-HydsB4Slylmb+jSy/MCzjzpzjgg=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-12.1.6.tgz}
+    name: '@next/swc-linux-x64-gnu'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-linux-x64-musl/12.1.6:
+    resolution: {integrity: sha1-HZkz3WujA9z9iirNasfCftQeLuo=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.1.6.tgz}
+    name: '@next/swc-linux-x64-musl'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-arm64-msvc/12.1.6:
+    resolution: {integrity: sha1-LvmDfxLKZSsXg9cuy4YgiQYELwI=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-12.1.6.tgz}
+    name: '@next/swc-win32-arm64-msvc'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-ia32-msvc/12.1.6:
+    resolution: {integrity: sha1-dAA9CqHFnfpWyxVIGlxgfLwAJ7k=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-12.1.6.tgz}
+    name: '@next/swc-win32-ia32-msvc'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/@next/swc-win32-x64-msvc/12.1.6:
+    resolution: {integrity: sha1-o1DK9Cl15xl7JLSVuNdk7sfmo24=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.6.tgz}
+    name: '@next/swc-win32-x64-msvc'
+    version: 12.1.6
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/fsevents/2.3.2:
+    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  artifactory.g.devqa.gcp.dev.paypalinc.com/lodash/4.17.21:
+    resolution: {integrity: sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=, registry: https://npm.paypal.com/, tarball: https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/lodash/-/lodash-4.17.21.tgz}
+    name: lodash
+    version: 4.17.21
+    dev: false

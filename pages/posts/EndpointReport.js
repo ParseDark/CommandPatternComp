@@ -7,27 +7,128 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import useConfigDataFetch from "../../store/useConfigDataFetch";
+import { sum } from "lodash";
+
+const timeRange = {
+  since: "2022-08-01T00:00:00.000Z",
+  until: "2022-10-22T23:59:59.999Z",
+};
 
 const incrementalData = [
   {
     title: "Activate User",
     value: 20,
-    dataSource: "/api/activateUser?timeRange=[x,y]&events=ActivateUser",
+    payload: {
+      filters: [
+        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          value: "intelligenceHub_aiPlatform_endpoint",
+          key: "event_name",
+          selected: true,
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return res?.internal_user?.length || 0;
+    },
   },
   {
     title: "New Endpoint",
     value: 20,
-    dataSource: "/api/newEndpoint",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          selected: true,
+          key: "event_name",
+          value: "createSeldonEndpointSDK",
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          key: "event_name",
+          value: "Err",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
   },
   {
-    title: "Single Endpoint Request Deploy",
+    title: "Single Endpoint Request",
     value: 100,
-    dataSource: "/api/single",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          selected: true,
+          value: "submitSeldonSingleDeploySDK",
+          key: "event_name",
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          key: "event_name",
+          value: "Err",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return sum(res?.records);
+    },
   },
   {
-    title: "Advance Endpoint Request Deploy",
+    title: "Advance Endpoint Request",
     value: 100,
-    dataSource: "/api/advance",
+    payload: {
+      filters: [
+        {
+          predicate: "contains",
+          selected: true,
+          key: "event_name",
+          value: "submitSeldonCanaryDeploySDK",
+        },
+        {
+          predicate: "contains",
+          selected: true,
+          key: "event_name",
+          value: "submitSeldonShadowDeploySDK",
+        },
+        {
+          predicate: "contains",
+          selected: true,
+          key: "event_name",
+          value: "submitSeldonABDeploySDK",
+        },
+        {
+          predicate: "contains",
+          selected: true,
+          key: "event_name",
+          value: "submitSeldonMABDeploySDK",
+        },
+        {
+          predicate: "does not contain",
+          selected: true,
+          key: "event_name",
+          value: "Err",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return 20;
+    },
   },
 ];
 
@@ -36,21 +137,73 @@ const PageViews = [
     title: "Endpoint List",
     activateUser: 300,
     accessCount: 300,
-    dataSource: "/api/pageViews",
+    payload: {
+      filters: [
+        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          value: "intelligenceHub_aiPlatform_pipeline",
+          key: "event_name",
+          selected: true,
+        },
+      ],
+      ...timeRange,
+    },
   },
   {
     title: "Endpoint Detail",
     activateUser: 300,
     accessCount: 300,
-    dataSource: "/api/pageViews",
+    payload: {
+      filters: [
+        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          value: "intelligenceHub_aiPlatform_pipeline",
+          key: "event_name",
+          selected: true,
+        },
+      ],
+      ...timeRange,
+    },
   },
   {
     title: "Endpoint Create",
     activateUser: 300,
     accessCount: 300,
-    dataSource: "/api/pageViews",
+    payload: {
+      filters: [
+        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          predicate: "contains",
+          value: "intelligenceHub_aiPlatform_pipeline",
+          key: "event_name",
+          selected: true,
+        },
+      ],
+      ...timeRange,
+    },
   },
 ];
+
 export default function EndpointReport({}) {
   const [{ configs }, { initConfigJob }] = useConfigDataFetch(incrementalData);
   useEffect(() => {
@@ -62,7 +215,7 @@ export default function EndpointReport({}) {
       <section className="grid grid-cols-12 gap-3">
         {(configs || []).map((i) => (
           <ShadowCard title={i.title} colWidth={2} key={i.title}>
-            <NumberCard value={i.value} prefix={i.prefix} />
+            <NumberCard value={i.data} prefix={i.prefix} />
           </ShadowCard>
         ))}
 
