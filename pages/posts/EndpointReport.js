@@ -8,6 +8,10 @@ import ShadowCard from "../../components/Card";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import useConfigDataFetch from "../../store/useConfigDataFetch";
 import { sum } from "lodash";
+import Image from "next/image";
+import endpointList from "../../screenshots/endpoint/EndpointList.jpg";
+import endpointDetail from "../../screenshots/endpoint/endpointDetail.jpg";
+import createEndpoint from "../../screenshots/endpoint/createEndpoint.jpg";
 
 const timeRange = {
   since: "2022-08-01T00:00:00.000Z",
@@ -137,6 +141,7 @@ const PageViews = [
     title: "Endpoint List",
     activateUser: 300,
     accessCount: 300,
+    imageLink: endpointList,
     payload: {
       filters: [
         { predicate: "equal", value: "insightshubnodeweb", key: "component" },
@@ -160,6 +165,7 @@ const PageViews = [
     title: "Endpoint Detail",
     activateUser: 300,
     accessCount: 300,
+    imageLink: endpointDetail,
     payload: {
       filters: [
         { predicate: "equal", value: "insightshubnodeweb", key: "component" },
@@ -183,6 +189,7 @@ const PageViews = [
     title: "Endpoint Create",
     activateUser: 300,
     accessCount: 300,
+    imageLink: createEndpoint,
     payload: {
       filters: [
         { predicate: "equal", value: "insightshubnodeweb", key: "component" },
@@ -219,9 +226,9 @@ export default function EndpointReport({}) {
           </ShadowCard>
         ))}
 
-        <ShadowCard title={" Request Deploy Distribution Rate"} colWidth={4}>
+        {/* <ShadowCard title={" Request Deploy Distribution Rate"} colWidth={4}>
           <DoughnutDemo />
-        </ShadowCard>
+        </ShadowCard> */}
 
         {PageViews.map((page) => (
           <ShadowCard
@@ -237,7 +244,9 @@ export default function EndpointReport({}) {
             }
             colWidth={4}
           >
-            <section className="h-10">Screen + Link</section>
+            <section className="h-30">
+              <Image src={page.imageLink} alt={page.title} layout="intrinsic" />
+            </section>
           </ShadowCard>
         ))}
       </section>

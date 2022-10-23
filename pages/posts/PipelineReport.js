@@ -6,6 +6,12 @@ import { faEye, faUser } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
 import useConfigDataFetch from "../../store/useConfigDataFetch";
 import { sum } from "lodash";
+import pipelineList from "../../screenshots/pipeline/pipelineList.jpg";
+import pipelineDetail from "../../screenshots/pipeline/pipelineDetail.jpg";
+import pipelineDesign from "../../screenshots/pipeline/pipelineDesign.jpg";
+import pipelineDebug from "../../screenshots/pipeline/pipelineDebug.jpg";
+import pipelineMonitor from "../../screenshots/pipeline/pipelineMonitor.jpg";
+import Image from "next/image";
 
 const timeRange = {
   since: "2022-08-01T00:00:00.000Z",
@@ -147,30 +153,35 @@ const PageViews = [
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
+    imageLink: pipelineList,
   },
   {
     title: "Pipeline Detail",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
+    imageLink: pipelineDetail,
   },
   {
     title: "Pipeline Design",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
+    imageLink: pipelineDesign,
   },
   {
     title: "Pipeline Debug",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
+    imageLink: pipelineDebug,
   },
   {
     title: "Pipeline Monitor",
     activateUser: 300,
     accessCount: 300,
     dataSource: "/api/pageViews",
+    imageLink: pipelineMonitor,
   },
 ];
 export default function EndpointReport({}) {
@@ -203,7 +214,9 @@ export default function EndpointReport({}) {
             }
             colWidth={4}
           >
-            <section className="h-10">Screen + Link</section>
+            <section className="h-30">
+              <Image src={page.imageLink} alt={page.title} layout="intrinsic" />
+            </section>
           </ShadowCard>
         ))}
       </section>
