@@ -1,17 +1,13 @@
 import React, { useEffect } from "react";
 import Layout from "../../components/layout";
-import { DoughnutDemo } from "../../components/Chart/DoughnutDemo";
 import NumberCard from "../../components/NumberCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
 import ShadowCard from "../../components/Card";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import useConfigDataFetch from "../../store/useConfigDataFetch";
 import { sum } from "lodash";
-import Image from "next/image";
 import endpointList from "../../screenshots/endpoint/EndpointList.jpg";
 import endpointDetail from "../../screenshots/endpoint/endpointDetail.jpg";
 import createEndpoint from "../../screenshots/endpoint/createEndpoint.jpg";
+import PageViewComponent from "../../components/PageViewComponent";
 
 const timeRange = {
   since: "2022-08-01T00:00:00.000Z",
@@ -256,7 +252,8 @@ const PageViews = [
         },
         {
           key: "event_name",
-          value: "intelligenceHub_aiPlatform_endpointPerformanceTestingReport_screen_shown",
+          value:
+            "intelligenceHub_aiPlatform_endpointPerformanceTestingReport_screen_shown",
           predicate: "equal",
         },
       ],
@@ -291,23 +288,7 @@ export default function EndpointReport({}) {
         </ShadowCard> */}
 
         {PageViews.map((page) => (
-          <ShadowCard
-            key={page.title}
-            title={
-              <>
-                {page.title}
-                <FontAwesomeIcon icon={faUser} className="ml-3" />(
-                {page?.data?.activateUser})
-                <FontAwesomeIcon icon={faEye} className="ml-3" />(
-                {page?.data?.accessCount})
-              </>
-            }
-            colWidth={4}
-          >
-            <section className="h-30">
-              <Image src={page.imageLink} alt={page.title} layout="intrinsic" />
-            </section>
-          </ShadowCard>
+          <PageViewComponent key={page.title} page={page} />
         ))}
       </section>
     </Layout>
