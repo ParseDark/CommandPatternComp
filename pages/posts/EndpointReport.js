@@ -144,7 +144,11 @@ const PageViews = [
     imageLink: endpointList,
     payload: {
       filters: [
-        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
         {
           predicate: "equal",
           key: "page_group",
@@ -152,13 +156,18 @@ const PageViews = [
           selected: true,
         },
         {
-          predicate: "contains",
-          value: "intelligenceHub_aiPlatform_pipeline",
           key: "event_name",
-          selected: true,
+          value: "intelligenceHub_aiPlatform_endpointList_screen_shown",
+          predicate: "equal",
         },
       ],
       ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
     },
   },
   {
@@ -168,7 +177,11 @@ const PageViews = [
     imageLink: endpointDetail,
     payload: {
       filters: [
-        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
         {
           predicate: "equal",
           key: "page_group",
@@ -176,13 +189,18 @@ const PageViews = [
           selected: true,
         },
         {
-          predicate: "contains",
-          value: "intelligenceHub_aiPlatform_pipeline",
           key: "event_name",
-          selected: true,
+          value: "intelligenceHub_aiPlatform_endpointDetails_screen_shown",
+          predicate: "equal",
         },
       ],
       ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
     },
   },
   {
@@ -192,7 +210,11 @@ const PageViews = [
     imageLink: createEndpoint,
     payload: {
       filters: [
-        { predicate: "equal", value: "insightshubnodeweb", key: "component" },
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
         {
           predicate: "equal",
           key: "page_group",
@@ -200,13 +222,51 @@ const PageViews = [
           selected: true,
         },
         {
-          predicate: "contains",
-          value: "intelligenceHub_aiPlatform_pipeline",
           key: "event_name",
-          selected: true,
+          value: "intelligenceHub_aiPlatform_endpointRegister_screen_shown",
+          predicate: "equal",
         },
       ],
       ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
+    },
+  },
+  {
+    title: "Endpoint Perf Testing",
+    activateUser: 300,
+    accessCount: 300,
+    imageLink: createEndpoint,
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          key: "event_name",
+          value: "intelligenceHub_aiPlatform_endpointPerformanceTestingReport_screen_shown",
+          predicate: "equal",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
     },
   },
 ];
@@ -237,9 +297,9 @@ export default function EndpointReport({}) {
               <>
                 {page.title}
                 <FontAwesomeIcon icon={faUser} className="ml-3" />(
-                {page.activateUser})
+                {page?.data?.activateUser})
                 <FontAwesomeIcon icon={faEye} className="ml-3" />(
-                {page.accessCount})
+                {page?.data?.accessCount})
               </>
             }
             colWidth={4}

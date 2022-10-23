@@ -154,6 +154,33 @@ const PageViews = [
     accessCount: 300,
     dataSource: "/api/pageViews",
     imageLink: pipelineList,
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          key: "event_name",
+          value: "intelligenceHub_aiPlatform_pipelineList_screen_shown",
+          predicate: "equal",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
+    },
   },
   {
     title: "Pipeline Detail",
@@ -161,6 +188,33 @@ const PageViews = [
     accessCount: 300,
     dataSource: "/api/pageViews",
     imageLink: pipelineDetail,
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          key: "event_name",
+          value: "intelligenceHub_aiPlatform_pipelineDetail_screen_shown",
+          predicate: "equal",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
+    },
   },
   {
     title: "Pipeline Design",
@@ -168,6 +222,33 @@ const PageViews = [
     accessCount: 300,
     dataSource: "/api/pageViews",
     imageLink: pipelineDesign,
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          key: "event_name",
+          value: "intelligenceHub_aiPlatform_pipelineDesign_screen_shown",
+          predicate: "equal",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
+    },
   },
   {
     title: "Pipeline Debug",
@@ -175,19 +256,43 @@ const PageViews = [
     accessCount: 300,
     dataSource: "/api/pageViews",
     imageLink: pipelineDebug,
-  },
-  {
-    title: "Pipeline Monitor",
-    activateUser: 300,
-    accessCount: 300,
-    dataSource: "/api/pageViews",
-    imageLink: pipelineMonitor,
+    payload: {
+      filters: [
+        {
+          predicate: "equal",
+          value: "insightshubnodeweb",
+          key: "component",
+        },
+        {
+          predicate: "equal",
+          key: "page_group",
+          value: "intelligenceHub:aiPlatform",
+          selected: true,
+        },
+        {
+          key: "event_name",
+          value: "intelligenceHub_aiPlatform_pipelineDebug_screen_shown",
+          predicate: "equal",
+        },
+      ],
+      ...timeRange,
+    },
+    formatValueFunc: (res) => {
+      return {
+        activateUser: res?.internal_user?.length || 0,
+        accessCount: sum(res?.page_views),
+      };
+    },
   },
 ];
 export default function EndpointReport({}) {
   const [{ configs }, { initConfigJob }] = useConfigDataFetch(incrementalData);
+  const [{ configs: pageViewsConfig }, { initConfigJob: initPageViewsConfig }] =
+    useConfigDataFetch(PageViews);
+
   useEffect(() => {
     initConfigJob();
+    initPageViewsConfig();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -200,16 +305,16 @@ export default function EndpointReport({}) {
           </ShadowCard>
         ))}
 
-        {PageViews.map((page) => (
+        {(pageViewsConfig || []).map((page) => (
           <ShadowCard
             key={page.title}
             title={
               <>
                 {page.title}
                 <FontAwesomeIcon icon={faUser} className="ml-3" />(
-                {page.activateUser})
+                {page?.data?.activateUser})
                 <FontAwesomeIcon icon={faEye} className="ml-3" />(
-                {page.accessCount})
+                {page?.data?.accessCount})
               </>
             }
             colWidth={4}
